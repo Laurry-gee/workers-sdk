@@ -1,10 +1,10 @@
 import { existsSync } from "fs";
 import path from "path";
 import { spawn } from "cross-spawn";
-import whichPmRuns from "which-pm-runs";
 import { endSection, logRaw, stripAnsi } from "./cli";
 import { brandColor, dim } from "./colors";
 import { spinner } from "./interactive";
+import { detectPackageManager } from "./packages";
 import type { PagesGeneratorContext } from "types";
 
 type RunOptions = {
@@ -139,19 +139,6 @@ export const npmInstall = async () => {
 		startText: "Installing dependencies",
 		doneText: `${brandColor("installed")} ${dim(`via \`${npm} install\``)}`,
 	});
-};
-
-export const detectPackageManager = () => {
-	const pm = whichPmRuns();
-
-	if (!pm) {
-		return { npm: "npm", npx: "npx" };
-	}
-
-	return {
-		npm: pm.name,
-		npx: pm.name === "pnpm" ? `pnpx` : `npx`,
-	};
 };
 
 export const installWrangler = async () => {
