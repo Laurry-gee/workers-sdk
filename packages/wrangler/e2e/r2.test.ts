@@ -76,12 +76,10 @@ describe("r2", async () => {
     `;
 		expect(stdout).toMatchInlineSnapshot(`
 			"Downloading \\"testr2\\" from \\"wrangler-smoke-test-bucket\\".
-
 			If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose"
 		`);
 		expect(stderr).toMatchInlineSnapshot(`
 			"X [ERROR] Failed to fetch /accounts/CLOUDFLARE_ACCOUNT_ID/r2/buckets/wrangler-smoke-test-bucket/objects/testr2 - 404: Not Found);
-
 			"
 		`);
 	});
@@ -111,12 +109,10 @@ describe("r2", async () => {
 	`;
 		expect(stdout).toMatchInlineSnapshot(`
 			"Creating object \\"testr2\\" in bucket \\"wrangler-smoke-test-bucket\\".
-
 			If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose"
 		`);
 		expect(stderr).toMatchInlineSnapshot(`
 			"X [ERROR] Failed to fetch /accounts/CLOUDFLARE_ACCOUNT_ID/r2/buckets/wrangler-smoke-test-bucket/objects/testr2 - 404: Not Found);
-
 			"
 		`);
 	});

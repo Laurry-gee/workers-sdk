@@ -113,3 +113,46 @@ jobs:
 
       - name: Report Code Coverage
         uses: codecov/codecov-action@v3
+  e2e-test:
+    if: ${{ github.repository_owner == 'cloudflare' }}
+    name: "E2E Test"
+    strategy:
+      matrix:
+        os:
+          [
+            macos-11,
+            macos-12,
+            macos-13,
+            windows-2019,
+            windows-2022,
+            ubuntu-20.04,
+            ubuntu-22.04,
+          ]
+        node: ["16", "18"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install workerd Dependencies
+        if: ${{ runner.os == 'Linux' }}
+        run: |
+          export DEBIAN_FRONTEND=noninteractive
+          sudo apt-get update
+          sudo apt-get install -y libc++1
+
+      - name: Install NPM Dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: cd packages/wrangler && npm run test:e2e
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.TEST_CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.TEST_CLOUDFLARE_ACCOUNT_ID }}
+          NODE_OPTIONS: "--max_old_space_size=8192"
