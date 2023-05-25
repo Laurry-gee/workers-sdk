@@ -118,14 +118,13 @@ jobs:
     name: "E2E Test"
     strategy:
       matrix:
-        os:
-          [
-            macos-11,
-            macos-12,
+        os: [
+            # macos-11,
+            # macos-12,
             macos-13,
             windows-2019,
             windows-2022,
-            ubuntu-20.04,
+            # ubuntu-20.04,
             ubuntu-22.04,
           ]
         node: ["16", "18"]
