@@ -558,9 +558,10 @@ async function applyMiddlewareLoaderFacade(
 	// We need to import each of the middlewares, so we need to generate a
 	// random, unique identifier that we can use for the import.
 	// Middlewares are required to be default exports so we can import to any name.
+	// (Note that for Windows support, we need to escape any backslashes.)
 	const middlewareIdentifiers = middleware.map((m, index) => [
 		`__MIDDLEWARE_${index}__`,
-		path.resolve(getBasePath(), m.path),
+		path.resolve(getBasePath(), m.path).replaceAll("\\", "\\\\"),
 	]);
 
 	const dynamicFacadePath = path.join(
