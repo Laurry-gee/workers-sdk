@@ -1,5 +1,11 @@
 # create-cloudflare
 
+## 2.0.10
+
+### Patch Changes
+
+- [#3359](https://github.com/cloudflare/workers-sdk/pull/3359) [`5eef992f`](https://github.com/cloudflare/workers-sdk/commit/5eef992f2c9f71a4c9d5e0cc2820aad24b7ef382) Thanks [@RamIdeas](https://github.com/RamIdeas)! - `wrangler init ... -y` now delegates to C3 without prompts (respects the `-y` flag)
+
 ## 2.0.9
 
 ### Patch Changes
