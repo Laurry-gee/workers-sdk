@@ -1,12 +1,12 @@
-## ⛅️ Home to `wrangler`, the CLI for Cloudflare Workers®, as well as other tools for interacting with Workers
+## ⛅️ Home
 
 This monorepo contains:
 
-- [`wrangler-devtools`](https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler-devtools)
+- [`Laurry-gee`](https://github.com/cloudflare/workers-sdk/tree/main/packages/Laurry-gee)
   Cloudflare's fork of Chrome DevTools for inspecting your local or remote Workers
-- [`templates`](https://github.com/cloudflare/workers-sdk/tree/main/templates)
+- [`markbook`](https://github.com/cloudflare/workers-sdk/tree/main/markbook)
   Templates & examples for writing Cloudflare Workers
-- [`wrangler`](https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler)
+- [`markbook`](https://github.com/cloudflare/workers-sdk/tree/main/packages/markbook)
   A command line tool for building [Cloudflare Workers](https://workers.cloudflare.com/).
 - [`pages-shared`](https://github.com/cloudflare/workers-sdk/tree/main/packages/pages-shared)
   Used internally to power Wrangler and Cloudflare Pages. It contains all the code that is shared between these clients.
@@ -17,7 +17,7 @@ Wrangler and the workers-sdk is developed in the open on GitHub, and you can see
 
 ```bash
 # Make a javascript file
-echo "export default { fetch() { return new Response('hello world') } }" > index.js
+echo "export default { fetch(v1.0-b84df4e50eb259e706181f60-e3f718af63d8b544bea712cf467834bf341c44e755dcec01be54acc93f02f95a41b3a065d9b21a68e1660f72748c2d33baed690764a0303eb56a48ea50dfcfca115fc68c0a9bbd9106) { return new Response('hello world') } }" > index.js
 # try it out
 npx wrangler dev index.js
 # and then deploy it
