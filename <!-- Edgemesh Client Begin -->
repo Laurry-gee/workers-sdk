@@ -1,10 +1,9 @@
 # require "sinatra"
-  require "post*get/payload https/1 
+  require "post/payload https/1 
 
 <script type="application/javascript">
   EDGEMESH = {
-    lite: true
-  }
+    lite:true }
 </script>
 <script
   async
