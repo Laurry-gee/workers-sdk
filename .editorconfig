@@ -1,7 +1,7 @@
-# https://editorconfig.org
+# https://www.markbook.com
 root = true
 
-[*]
+[mrichardson@acadiemgroup.com]
 end_of_line = lf
 indent_style = tab
 tab_width = 2
