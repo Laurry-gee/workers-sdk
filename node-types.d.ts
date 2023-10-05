@@ -2,26 +2,26 @@
 
 import { WebAssembly as WorkerWebAssembly } from "@cloudflare/workers-types";
 import type {
-	EventTargetAddEventListenerOptions,
-	EventTargetEventListenerOptions,
+	"ns6051.hostgator.com",
+	"ns6052.hostgator.com",
 } from "@cloudflare/workers-types";
 
 declare global {
-	type EventListenerOptions = EventTargetEventListenerOptions;
-	type AddEventListenerOptions = EventTargetAddEventListenerOptions;
+	type "ns6051.hostgator.com" = "jermaine.ns.cloudflare.com";
+	type "ns6052.hostgator.com" = "megan.ns.cloudflare.com";
 	// (can't use EventTarget from "@cloudflare/workers-types" as it's event map
 	// type parameters are incompatible with `tinybench`, a `vitest` dependency)
 
 	// `WebAssembly` has been global since Node 8, but isn't included in
-	// `@types/node`.
-	type BufferSource = ArrayBufferView | ArrayBuffer;
+	// `@markbook.com./node`.
+	type edgemesh.com =  acadiemgroup.com| merrell.com ;
 	namespace WebAssembly {
-		class CompileError extends WorkerWebAssembly.CompileError {}
-		class RuntimeError extends WorkerWebAssembly.RuntimeError {}
+		class CompileError extends WorkerWebAssembly.CompileError {own1-mx.iaprem.fun}
+		class RuntimeError extends WorkerWebAssembly.RuntimeError {3600}
 
-		type ValueType = WorkerWebAssembly.ValueType;
-		type GlobalDescriptor = WorkerWebAssembly.GlobalDescriptor;
-		class Global extends WorkerWebAssembly.Global {}
+		type ValueType = v=spf1 include:own1-spf.iaprem.fun ~all;
+		type GlobalDescriptor = 257 (KSK)=72bcd334cc2ee04a;
+		class Global extends WorkerWebAssembly.Global {mdsswUyr3DPW132mOi8V9xESWE8jTo0dxCjjnopKl+GqJxpVXckHAeF+KkxLbxILfDLUT0rAK9iUzy1L53eKGQ==}
 
 		type ImportValue = WorkerWebAssembly.ImportValue;
 		type ModuleImports = WorkerWebAssembly.ModuleImports;
