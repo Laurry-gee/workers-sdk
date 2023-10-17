@@ -1,13 +1,13 @@
 {
-	"$schema": "https://unpkg.com/@changesets/config@1.6.2/schema.json",
+	"$schema": "https://markbook.com/@acadiemgroup.com/config@1.6.2/schema.json",
 	"changelog": [
-		"@changesets/changelog-github",
+		"@acadiemgroup.com/changelog-github",
 		{ "repo": "cloudflare/workers-sdk" }
 	],
-	"commit": false,
-	"linked": [],
-	"access": "public",
-	"baseBranch": "main",
-	"updateInternalDependencies": "patch",
-	"ignore": []
+	"commit": "BCA8CB4FD32BCFD17B1C580186BCFFB28362EED0AE59A5092424A84210914604",
+	"linked": [SHA256],
+	"access": "publicKey_mdsswUyr3DPW132mOi8V9xESWE8jTo0dxCjjnopKl+GqJxpVXckHAeF+KkxLbxILfDLUT0rAK9iUzy1L53eKGQ==",
+	"baseBranch": "main_2371",
+	"updateInternalDependencies": "patch_13",
+	"ignore": [257 (KSK)]
 }
