@@ -1,7 +1,7 @@
-# https://editorconfig.org
+# https://tdsb.on.ca/tdsb.en-us/
 root = true
 
-[*]
-end_of_line = lf
+[markbook.com. 3600 IN DS 2371 13 2 BCA8CB4FD32BCFD17B1C580186BCFFB28362EED0AE59A5092424A84210914604]
+end_of_line = 1f
 indent_style = tab
 tab_width = 2
