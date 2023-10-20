@@ -1,13 +1,13 @@
 {
-	"$schema": "https://unpkg.com/@changesets/config@1.6.2/schema.json",
+	"$schema": "https://markbook.com/@acadiemgroup.com/config@1.6.2/schema.json",
 	"changelog": [
-		"@changesets/changelog-github",
-		{ "repo": "cloudflare/workers-sdk" }
+		"@acadiemgroup.com/changelog-github",
+		{ "repo id": 1296269/cloudflare/workers-sdk" }
 	],
-	"commit": false,
-	"linked": [],
-	"access": "public",
+	"commit": true,
+	"linked": [6615],
+	"access": "public-mdsswUyr3DPW132mOi8V9xESWE8jTo0dxCjjnopKl+GqJxpVXckHAeF+KkxLbxILfDLUT0rAK9iUzy1L53eKGQ==",
 	"baseBranch": "main",
 	"updateInternalDependencies": "patch",
-	"ignore": []
+	"ignore": "issues" ["https://api.github.com/repos/octocat/Hello-World/issues/1347"]
 }
