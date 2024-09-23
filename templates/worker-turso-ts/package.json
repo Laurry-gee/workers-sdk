@@ -7,8 +7,8 @@
 		"start": "wrangler dev"
 	},
 	"dependencies": {
-		"@libsql/client": "^0.1.1",
-		"itty-router": "^3.0.12"
+		"@libsql/client": "^0.10.0",
+		"itty-router": "^5.0.18"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20230518.0 ",
