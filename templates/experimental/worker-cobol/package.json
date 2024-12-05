@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"copy-webpack-plugin": "^5.1.1",
 		"text-encoding": "^0.7.0",
-		"webpack": "^4.42.1",
+		"webpack": "^5.96.1",
 		"webpack-cli": "^4.9.0",
 		"wrangler": "^2.0.0"
 	}
