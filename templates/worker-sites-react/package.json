@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"@cloudflare/kv-asset-handler": "~0.1.2",
-		"react": "^16.9.0",
+		"react": "^19.0.0",
 		"react-dom": "^16.9.0"
 	},
 	"devDependencies": {
